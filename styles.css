@@ -1,0 +1,97 @@
+:root {
+    --bright-color: #fafafa;
+    --dark-color: #0F0F0F;
+    --random-color: rgb(255, 0, 0);
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    /*Commissioner font*/
+    font-family: "Commissioner", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "FLAR" 0,
+        "VOLM" 0;
+
+    background-color: #fafafa;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+    margin: 0;
+}
+
+header {
+    background-color: var(--random-color);
+    color: #fafafa;
+    height: 15dvh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+}
+
+header h1 {
+    font-size: max(3vw, 6vh);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#color-preview  {
+    background-color: var(--random-color);
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    border-radius: .5rem;
+    display: flex;
+    margin: max(1vw, 2vh);
+    margin-top: max(1.5vw, 3vh);
+    margin-bottom: max(0.5vw, 1vh) ;
+    height: 65dvh;
+    max-width: 65dvh;
+    width: 90%;
+}
+
+#text-content {
+    color: var(--dark-color);
+    font-size: max(1.5vw, 2.5vh);
+    margin: max(1vw, 2vh);
+}
+
+#change-color-button {
+    transform: scale(0.95);
+    text-decoration: none;
+    border: none;
+    font-size: max(2vw, 4vh);
+    border-radius: .5rem;
+    background-color: var(--random-color);
+    padding: max(0.9vw, 1.8vh);
+    transition: transform 1s;
+}
+
+#change-color-button:hover {
+    transform: scale(1);
+}
+
+footer {
+    display: flex;
+    font-size: max(0.75vw, 1.5vh);
+    justify-content: center;
+    align-items: flex-end;
+    color: var(--dark-color);
+    margin-top: auto;
+    
+}
